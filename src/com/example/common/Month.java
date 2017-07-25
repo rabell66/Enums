@@ -12,7 +12,7 @@ public enum Month {
 
 
     Month() {
-        this.englishName = this.toString().toLowerCase();
+        this.englishName = this.toString().substring(0,1).toUpperCase() + this.toString().toLowerCase().substring(1);
     }
 
 }
